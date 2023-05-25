@@ -1,0 +1,91 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name      String
+  password  String
+  gender    Gender
+  job       Job
+  isAdmin   Boolean  @default(false)
+}
+
+model Work {
+  id         String   @id @default(uuid())
+  code       String   @unique
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  name       String
+  // diagnosis  String   @db.VarChar(255)
+  suggestion String   @db.VarChar(255)
+  rules      Rule[]
+}
+
+model Interest {
+  id          String   @id @default(uuid())
+  code        String   @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  name        String
+  description String   @db.VarChar(255)
+  example     String[]
+  rules       Rule[]
+}
+
+model Talent {
+  id          String   @id @default(uuid())
+  code        String   @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  name        String
+  description String   @db.VarChar(255)
+  rules       Rule[]
+}
+
+model Rule {
+  id         String   @id @default(uuid())
+  Interest   Interest @relation(fields: [interestId], references: [id], onDelete: Cascade)
+  interestId String
+  Talent     Talent   @relation(fields: [talentId], references: [id], onDelete: Cascade)
+  talentId   String
+  Work       Work     @relation(fields: [workId], references: [id], onDelete: Cascade)
+  workId     String
+}
+
+// model User {
+//   id    Int    @id @default(autoincrement())
+//   name  String
+//   posts Post[]
+// }
+
+// model Post {
+//   id    Int    @id @default(autoincrement())
+//   title String
+
+//   User   User? @relation(fields: [userId], references: [id])
+//   userId Int?
+// }
+
+enum Gender {
+  Pria
+  Wanita
+}
+
+enum Job {
+  Pelajar
+  Mahasiswa
+  Jobseekers
+  Lainnya
+}
