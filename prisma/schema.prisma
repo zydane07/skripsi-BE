@@ -23,8 +23,7 @@ model User {
 }
 
 model Work {
-  id         String   @id @default(uuid())
-  code       String   @unique
+  code       String   @id
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
   name       String
@@ -34,8 +33,7 @@ model Work {
 }
 
 model Interest {
-  id          String   @id @default(uuid())
-  code        String   @unique
+  code        String   @id
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   name        String
@@ -45,8 +43,7 @@ model Interest {
 }
 
 model Talent {
-  id          String   @id @default(uuid())
-  code        String   @unique
+  code        String   @id
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   name        String
@@ -55,13 +52,13 @@ model Talent {
 }
 
 model Rule {
-  id         String   @id @default(uuid())
-  Interest   Interest @relation(fields: [interestId], references: [id], onDelete: Cascade)
-  interestId String
-  Talent     Talent   @relation(fields: [talentId], references: [id], onDelete: Cascade)
-  talentId   String
-  Work       Work     @relation(fields: [workId], references: [id], onDelete: Cascade)
-  workId     String
+  id           String   @id @default(uuid())
+  Interest     Interest @relation(fields: [interestCode], references: [code], onDelete: Cascade)
+  interestCode String
+  Talent       Talent   @relation(fields: [talentCode], references: [code], onDelete: Cascade)
+  talentCode   String
+  Work         Work     @relation(fields: [workCode], references: [code], onDelete: Cascade)
+  workCode     String
 }
 
 // model User {

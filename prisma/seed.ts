@@ -268,7 +268,6 @@ const main = async () => {
   });
 
   // seed rule
-
   const [
     work_1,
     work_2,
@@ -344,50 +343,65 @@ const main = async () => {
   ];
 
   console.log(rulesData);
-  for (const ruleData of rulesData) {
-    const talents = await prisma.talent.findMany({
-      where: {
-        code: { in: ruleData.talentCodes },
-      },
-    });
+  // for (const ruleData of rulesData) {
+  //   const talents = await prisma.talent.findMany({
+  //     where: {
+  //       code: { in: ruleData.talentCodes },
+  //     },
+  //   });
 
-    if (talents.length !== ruleData.talentCodes.length) {
-      const missingCodes = ruleData.talentCodes.filter(
-        (code) => !talents.some((talent) => talent.code === code),
-      );
-      throw new Error(
-        `Talents with codes [${missingCodes.join(', ')}] not found.`,
-      );
-    }
+  //   if (talents.length !== ruleData.talentCodes.length) {
+  //     const missingCodes = ruleData.talentCodes.filter(
+  //       (code) => !talents.some((talent) => talent.code === code),
+  //     );
+  //     throw new Error(
+  //       `Talents with codes [${missingCodes.join(', ')}] not found.`,
+  //     );
+  //   }
 
-    const interests = await prisma.interest.findMany({
-      where: { code: { in: ruleData.interestCodes } },
-    });
+  //   const interests = await prisma.interest.findMany({
+  //     where: { code: { in: ruleData.interestCodes } },
+  //   });
 
-    if (interests.length !== ruleData.interestCodes.length) {
-      const missingCodes = ruleData.interestCodes.filter(
-        (code) => !interests.some((interest) => interest.code === code),
-      );
-      throw new Error(
-        `Interests with codes [${missingCodes.join(', ')}] not found.`,
-      );
-    }
+  //   if (interests.length !== ruleData.interestCodes.length) {
+  //     const missingCodes = ruleData.interestCodes.filter(
+  //       (code) => !interests.some((interest) => interest.code === code),
+  //     );
+  //     throw new Error(
+  //       `Interests with codes [${missingCodes.join(', ')}] not found.`,
+  //     );
+  //   }
 
-    const work = await prisma.work.findUnique({
-      where: { code: ruleData.workCode },
-    });
+  //   const work = await prisma.work.findUnique({
+  //     where: { code: ruleData.workCode },
+  //   });
 
-    if (!work) {
-      throw new Error(`Work with code '${ruleData.workCode}' not found.`);
-    }
+  //   if (!work) {
+  //     throw new Error(`Work with code '${ruleData.workCode}' not found.`);
+  //   }
 
-    for (const talent of talents) {
-      for (const interest of interests) {
+  //   for (const talent of talents) {
+  //     for (const interest of interests) {
+  //       await prisma.rule.create({
+  //         data: {
+  //           talentCode: talent.code,
+  //           interestCode: interest.code,
+  //           workCode: work.code,
+  //         },
+  //       });
+  //     }
+  //   }
+  // }
+  for (const rule of rulesData) {
+    const { talentCodes, interestCodes, workCode } = rule;
+
+    for (const talentCode of talentCodes) {
+      for (const interestCode of interestCodes) {
         await prisma.rule.create({
           data: {
-            talentId: talent.id,
-            interestId: interest.id,
-            workId: work.id,
+            talentCode,
+            interestCode,
+            workCode,
           },
         });
       }
