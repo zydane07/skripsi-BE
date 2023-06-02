@@ -40,15 +40,20 @@ export class WorksService {
   }
 
   async update(id: string, updateWorkDto: UpdateWorkDto) {
-    // return await this.prisma.work.update({
-    //   where: { code: id },
-    //   data: {
-    //     name: updateWorkDto.name,
-    //     suggestion: updateWorkDto.suggestion,
-    //   },
-    // });
+    try {
+      return await this.prisma.work.update({
+        where: { code: id },
+        data: {
+          name: updateWorkDto.name,
+          suggestion: updateWorkDto.suggestion,
+        },
+      });
+    } catch (error) {
+      if (!(error instanceof Prisma.PrismaClientKnownRequestError)) return;
+      if (error.code === 'P2025') throw new NotFoundException();
 
-    return `This action updates a #${id} work`;
+      return 'err update';
+    }
   }
 
   async remove(id: string) {

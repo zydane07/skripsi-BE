@@ -1,4 +1,5 @@
 import { Gender, Job, Prisma, PrismaClient } from '@prisma/client';
+import * as bcrypt from 'bcryptjs';
 
 const prisma = new PrismaClient();
 
@@ -7,35 +8,56 @@ const main = async () => {
   await prisma.work.deleteMany();
   await prisma.talentInterest.deleteMany();
   await prisma.rule.deleteMany();
+  await prisma.user.deleteMany();
 
   // create admin
-  const admin = [
-    {
-      email: 'muhammadzydane3@gmail.com',
-      name: 'Zydane',
-      password: 'asdd',
-      isAdmin: true,
-      gender: Gender.Pria,
-      job: Job.Lainnya,
-    },
-  ];
-  for (const data of admin) {
-    const existingAdmin = await prisma.user.findUnique({
-      where: { email: data.email },
-    });
-    if (!existingAdmin) {
-      await prisma.user.create({
-        data: {
-          email: data.email,
-          name: data.name,
-          password: data.password,
-          isAdmin: data.isAdmin,
-          gender: data.gender,
-          job: data.job,
-        },
-      });
-    }
-  }
+  await prisma.user.createMany({
+    data: [
+      {
+        email: 'muhammadzydane3@gmail.com',
+        name: 'Zydane',
+        password: await bcrypt.hash('asdddd', 10),
+        isAdmin: true,
+        gender: Gender.Pria,
+        job: Job.Lainnya,
+      },
+      {
+        email: 'muhammadzydan3@gmail.com',
+        name: 'Rina',
+        password: await bcrypt.hash('123456', 10),
+        gender: Gender.Wanita,
+        job: Job.Mahasiswa,
+      },
+    ],
+  });
+  // const admin = [
+  //   {
+  //     email: 'muhammadzydane3@gmail.com',
+  //     name: 'Zydane',
+  //     password: 'asdddd',
+  //     isAdmin: true,
+  //     gender: Gender.Pria,
+  //     job: Job.Lainnya,
+  //   },
+  // ];
+  // for (const data of admin) {
+  //   const existingAdmin = await prisma.user.findUnique({
+  //     where: { email: data.email },
+  //   });
+  //   if (!existingAdmin) {
+  //     await prisma.user.create({
+  //       data: {
+  //         email: data.email,
+  //         name: data.name,
+  //         password: data.password,
+  //         isAdmin: data.isAdmin,
+  //         gender: data.gender,
+  //         job: data.job,
+  //       },
+  //     });
+  //   }
+  // }
+
   // seed work
   await prisma.work.createMany({
     data: [
@@ -641,137 +663,457 @@ const main = async () => {
         talentInterestCode: B07.code,
         workCode: P07.code,
       },
+      // RULE 8
+      {
+        code: 'R08',
+        talentInterestCode: M05.code,
+        workCode: P08.code,
+      },
+      {
+        code: 'R08',
+        talentInterestCode: M09.code,
+        workCode: P08.code,
+      },
+      {
+        code: 'R08',
+        talentInterestCode: M12.code,
+        workCode: P08.code,
+      },
+      {
+        code: 'R08',
+        talentInterestCode: B01.code,
+        workCode: P08.code,
+      },
+      {
+        code: 'R08',
+        talentInterestCode: B02.code,
+        workCode: P08.code,
+      },
+      {
+        code: 'R08',
+        talentInterestCode: B07.code,
+        workCode: P08.code,
+      },
+      {
+        code: 'R08',
+        talentInterestCode: B08.code,
+        workCode: P08.code,
+      },
+      // RULE 9
+      {
+        code: 'R09',
+        talentInterestCode: M03.code,
+        workCode: P09.code,
+      },
+      {
+        code: 'R09',
+        talentInterestCode: M04.code,
+        workCode: P09.code,
+      },
+      {
+        code: 'R09',
+        talentInterestCode: M07.code,
+        workCode: P09.code,
+      },
+      {
+        code: 'R09',
+        talentInterestCode: M09.code,
+        workCode: P09.code,
+      },
+      {
+        code: 'R09',
+        talentInterestCode: M11.code,
+        workCode: P09.code,
+      },
+      {
+        code: 'R09',
+        talentInterestCode: M12.code,
+        workCode: P09.code,
+      },
+      {
+        code: 'R09',
+        talentInterestCode: B01.code,
+        workCode: P09.code,
+      },
+      {
+        code: 'R09',
+        talentInterestCode: B02.code,
+        workCode: P09.code,
+      },
+      {
+        code: 'R09',
+        talentInterestCode: B04.code,
+        workCode: P09.code,
+      },
+      // RULE 10
+      {
+        code: 'R10',
+        talentInterestCode: M02.code,
+        workCode: P10.code,
+      },
+      {
+        code: 'R10',
+        talentInterestCode: M04.code,
+        workCode: P10.code,
+      },
+      {
+        code: 'R10',
+        talentInterestCode: M05.code,
+        workCode: P10.code,
+      },
+      {
+        code: 'R10',
+        talentInterestCode: M06.code,
+        workCode: P10.code,
+      },
+      {
+        code: 'R10',
+        talentInterestCode: M07.code,
+        workCode: P10.code,
+      },
+      {
+        code: 'R10',
+        talentInterestCode: M09.code,
+        workCode: P10.code,
+      },
+      {
+        code: 'R10',
+        talentInterestCode: M12.code,
+        workCode: P10.code,
+      },
+      {
+        code: 'R10',
+        talentInterestCode: B07.code,
+        workCode: P10.code,
+      },
+      {
+        code: 'R10',
+        talentInterestCode: B08.code,
+        workCode: P10.code,
+      },
+      // RULE 11
+      {
+        code: 'R11',
+        talentInterestCode: M01.code,
+        workCode: P11.code,
+      },
+      {
+        code: 'R11',
+        talentInterestCode: M02.code,
+        workCode: P11.code,
+      },
+      {
+        code: 'R11',
+        talentInterestCode: M04.code,
+        workCode: P11.code,
+      },
+      {
+        code: 'R11',
+        talentInterestCode: M11.code,
+        workCode: P11.code,
+      },
+      {
+        code: 'R11',
+        talentInterestCode: M12.code,
+        workCode: P11.code,
+      },
+      {
+        code: 'R11',
+        talentInterestCode: B01.code,
+        workCode: P11.code,
+      },
+      {
+        code: 'R11',
+        talentInterestCode: B02.code,
+        workCode: P11.code,
+      },
+      {
+        code: 'R11',
+        talentInterestCode: B05.code,
+        workCode: P11.code,
+      },
+      {
+        code: 'R11',
+        talentInterestCode: B06.code,
+        workCode: P11.code,
+      },
+      // RULE 12
+      {
+        code: 'R12',
+        talentInterestCode: M04.code,
+        workCode: P12.code,
+      },
+      {
+        code: 'R12',
+        talentInterestCode: M05.code,
+        workCode: P12.code,
+      },
+      {
+        code: 'R12',
+        talentInterestCode: M07.code,
+        workCode: P12.code,
+      },
+      {
+        code: 'R12',
+        talentInterestCode: M09.code,
+        workCode: P12.code,
+      },
+      {
+        code: 'R12',
+        talentInterestCode: M12.code,
+        workCode: P12.code,
+      },
+      {
+        code: 'R12',
+        talentInterestCode: B01.code,
+        workCode: P12.code,
+      },
+      {
+        code: 'R12',
+        talentInterestCode: B02.code,
+        workCode: P12.code,
+      },
+      {
+        code: 'R12',
+        talentInterestCode: B07.code,
+        workCode: P12.code,
+      },
+      {
+        code: 'R12',
+        talentInterestCode: B08.code,
+        workCode: P12.code,
+      },
+      // RULE 13
+      {
+        code: 'R13',
+        talentInterestCode: M02.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: M04.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: M06.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: M07.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: M08.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: M09.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: M11.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: M12.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: B01.code,
+        workCode: P13.code,
+      },
+      {
+        code: 'R13',
+        talentInterestCode: B02.code,
+        workCode: P13.code,
+      },
+      // RULE 14
+      {
+        code: 'R14',
+        talentInterestCode: M01.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: M02.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: M04.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: M06.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: M07.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: M09.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: M11.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: M12.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: B01.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: B02.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: B03.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: B05.code,
+        workCode: P14.code,
+      },
+      {
+        code: 'R14',
+        talentInterestCode: B06.code,
+        workCode: P14.code,
+      },
+      // RULE 15
+      {
+        code: 'R15',
+        talentInterestCode: M02.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: M04.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: M06.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: M07.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: M09.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: M11.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: M12.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: B01.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: B02.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: B04.code,
+        workCode: P15.code,
+      },
+      {
+        code: 'R15',
+        talentInterestCode: B05.code,
+        workCode: P15.code,
+      },
+      // RULE 16
+      {
+        code: 'R16',
+        talentInterestCode: M02.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: M04.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: M06.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: M07.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: M08.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: M09.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: M10.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: M12.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: B01.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: B04.code,
+        workCode: P16.code,
+      },
+      {
+        code: 'R16',
+        talentInterestCode: B08.code,
+        workCode: P16.code,
+      },
     ],
   });
-
-  // // seed rule
-  // const [
-  //   work_1,
-  //   work_2,
-  //   work_3,
-  //   work_4,
-  //   work_5,
-  //   work_6,
-  //   work_7,
-  //   work_8,
-  //   work_9,
-  //   work_10,
-  //   work_11,
-  //   work_12,
-  //   work_13,
-  //   work_14,
-  //   work_15,
-  //   work_16,
-  // ] = await prisma.work.findMany();
-  // const [
-  //   interest_1,
-  //   interest_2,
-  //   interest_3,
-  //   interest_4,
-  //   interest_5,
-  //   interest_6,
-  //   interest_7,
-  //   interest_8,
-  //   interest_9,
-  //   interest_10,
-  //   interest_11,
-  //   interest_12,
-  // ] = await prisma.interest.findMany();
-  // const [
-  //   talent_1,
-  //   talent_2,
-  //   talent_3,
-  //   talent_4,
-  //   talent_5,
-  //   talent_6,
-  //   talent_7,
-  //   talent_8,
-  // ] = await prisma.talent.findMany();
-  // console.log('code: ', interest_1.code, '\nname: ', interest_1.name);
-  // console.log('code: ', interest_2.code, '\nname: ', interest_2.name);
-  // console.log('code: ', interest_12.code, '\nname: ', interest_12.name);
-  // const rulesData = [
-  //   {
-  //     talentCodes: [talent_2.code, talent_4.code],
-  //     interestCodes: [
-  //       interest_2.code,
-  //       interest_4.code,
-  //       interest_7.code,
-  //       interest_11.code,
-  //       interest_12.code,
-  //     ],
-  //     workCode: work_1.code,
-  //   },
-  //   {
-  //     talentCodes: [talent_1.code, talent_2.code, talent_7.code, talent_8.code],
-  //     interestCodes: [
-  //       interest_2.code,
-  //       interest_4.code,
-  //       interest_5.code,
-  //       interest_7.code,
-  //       interest_12.code,
-  //     ],
-  //     workCode: work_2.code,
-  //   },
-  // ];
-  // console.log(rulesData);
-  // for (const ruleData of rulesData) {
-  //   const talents = await prisma.talent.findMany({
-  //     where: {
-  //       code: { in: ruleData.talentCodes },
-  //     },
-  //   });
-  //   if (talents.length !== ruleData.talentCodes.length) {
-  //     const missingCodes = ruleData.talentCodes.filter(
-  //       (code) => !talents.some((talent) => talent.code === code),
-  //     );
-  //     throw new Error(
-  //       `Talents with codes [${missingCodes.join(', ')}] not found.`,
-  //     );
-  //   }
-  //   const interests = await prisma.interest.findMany({
-  //     where: { code: { in: ruleData.interestCodes } },
-  //   });
-  //   if (interests.length !== ruleData.interestCodes.length) {
-  //     const missingCodes = ruleData.interestCodes.filter(
-  //       (code) => !interests.some((interest) => interest.code === code),
-  //     );
-  //     throw new Error(
-  //       `Interests with codes [${missingCodes.join(', ')}] not found.`,
-  //     );
-  //   }
-  //   const work = await prisma.work.findUnique({
-  //     where: { code: ruleData.workCode },
-  //   });
-  //   if (!work) {
-  //     throw new Error(`Work with code '${ruleData.workCode}' not found.`);
-  //   }
-  //   for (const talent of talents) {
-  //     for (const interest of interests) {
-  //       await prisma.rule.create({
-  //         data: {
-  //           talentCode: talent.code,
-  //           interestCode: interest.code,
-  //           workCode: work.code,
-  //         },
-  //       });
-  //     }
-  //   }
-  // }
-  // for (const rule of rulesData) {
-  //   const { talentCodes, interestCodes, workCode } = rule;
-  //   for (const talentCode of talentCodes) {
-  //     for (const interestCode of interestCodes) {
-  //       await prisma.rule.create({
-  //         data: {
-  //           talentCode,
-  //           interestCode,
-  //           workCode,
-  //         },
-  //       });
-  //     }
-  //   }
-  // }
 };
 
 main()
