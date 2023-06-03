@@ -24,8 +24,8 @@ export class WorksService {
       });
       return works;
     } catch (error) {
-      if (!(error instanceof PrismaClientKnownRequestError)) return;
-      console.log(error.code);
+      if (!(error instanceof Prisma.PrismaClientKnownRequestError)) return;
+      // console.log(error.code);
       if (error.code === 'P2002') throw new ConflictException();
       return 'error';
     }

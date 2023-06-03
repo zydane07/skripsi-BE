@@ -25,8 +25,6 @@ export class TalentsController {
     return this.talentsService.create(createTalentDto);
   }
 
-  // @UseGuards(IsAdminGuard)
-  // @UseGuards(AuthGuard)
   @Roles(Role.Admin)
   @Get()
   findAll() {
