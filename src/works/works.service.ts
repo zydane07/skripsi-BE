@@ -14,12 +14,13 @@ export class WorksService {
   constructor(private prisma: PrismaService) {}
   async create(createWorkDto: CreateWorkDto) {
     try {
-      const { code, name, suggestion } = createWorkDto;
+      const { code, name, suggestion, competence } = createWorkDto;
       const works = await this.prisma.work.create({
         data: {
           code,
           name,
           suggestion,
+          competence,
         },
       });
       return works;
@@ -46,6 +47,7 @@ export class WorksService {
         data: {
           name: updateWorkDto.name,
           suggestion: updateWorkDto.suggestion,
+          competence: updateWorkDto.competence,
         },
       });
     } catch (error) {

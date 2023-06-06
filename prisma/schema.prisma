@@ -28,6 +28,7 @@ model Work {
   updatedAt  DateTime @updatedAt
   name       String
   suggestion String   @db.Text
+  competence String[]
   rules      Rule[]
 }
 
