@@ -1,0 +1,24 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore build artifacts
+dist/
+
+# Ignore configuration files
+.env
+.env.local
+.env.*.local
+.env.test
+.env.test.local
+
+# Ignore editor-specific files and folders
+.vscode/
+.idea/
+
+# Ignore version control files
+.git/
+.gitignore
+
+# Ignore Docker-specific files
+Dockerfile
+.dockerignore
