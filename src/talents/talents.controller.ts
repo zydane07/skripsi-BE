@@ -25,7 +25,6 @@ export class TalentsController {
     return this.talentsService.create(createTalentDto);
   }
 
-  @Roles(Role.Admin)
   @Get()
   findAll() {
     return this.talentsService.findAll();

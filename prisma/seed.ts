@@ -24,7 +24,7 @@ const main = async () => {
       {
         email: 'muhammadzydan3@gmail.com',
         name: 'Rina',
-        password: await bcrypt.hash('123456', 10),
+        password: await bcrypt.hash('asdddd', 10),
         gender: Gender.Wanita,
         job: Job.Mahasiswa,
       },
@@ -405,8 +405,6 @@ const main = async () => {
     P15,
     P16,
   ] = await prisma.work.findMany({});
-
-  console.log(M02.code);
 
   await prisma.rule.createMany({
     data: [
