@@ -13,8 +13,12 @@ import { Prisma } from '@prisma/client';
 export class WorksService {
   constructor(private prisma: PrismaService) {}
   async create(createWorkDto: CreateWorkDto) {
+    console.log('aaaaaaddd');
+    console.log(createWorkDto);
+
     try {
       const { code, name, suggestion, competence } = createWorkDto;
+
       const works = await this.prisma.work.create({
         data: {
           code,
@@ -23,6 +27,7 @@ export class WorksService {
           competence,
         },
       });
+
       return works;
     } catch (error) {
       if (!(error instanceof Prisma.PrismaClientKnownRequestError)) return;
