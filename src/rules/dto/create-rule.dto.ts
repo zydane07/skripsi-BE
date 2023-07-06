@@ -1,7 +1,7 @@
 import { IsEnum, Matches } from 'class-validator';
 
 export class CreateRuleDto {
-  @Matches(/R\d{2}/)
+  @Matches(/^R\d{2}$/)
   code: string;
 
   @Matches(/^(B|M)\d{2}$/)

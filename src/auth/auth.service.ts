@@ -5,12 +5,14 @@ import { UsersService } from 'src/users/users.service';
 import { LoginAuthDto } from './dto/login-auth.dto';
 import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcryptjs';
+import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class AuthService {
   constructor(
     private userService: UsersService,
     private jwtService: JwtService,
+    private prisma: PrismaService,
   ) {}
 
   create(createAuthDto: CreateAuthDto) {
@@ -47,8 +49,13 @@ export class AuthService {
     return `This action returns all auth`;
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} auth`;
+  async findOne(email: string) {
+    const user = await this.prisma.user.findUnique({
+      where: { email },
+    });
+    console.log(user);
+
+    return user ? user.name : null;
   }
 
   update(id: number, updateAuthDto: UpdateAuthDto) {

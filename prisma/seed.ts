@@ -24,39 +24,12 @@ const main = async () => {
       {
         email: 'muhammadzydan3@gmail.com',
         name: 'Rina',
-        password: await bcrypt.hash('123456', 10),
+        password: await bcrypt.hash('asdddd', 10),
         gender: Gender.Wanita,
         job: Job.Mahasiswa,
       },
     ],
   });
-  // const admin = [
-  //   {
-  //     email: 'muhammadzydane3@gmail.com',
-  //     name: 'Zydane',
-  //     password: 'asdddd',
-  //     isAdmin: true,
-  //     gender: Gender.Pria,
-  //     job: Job.Lainnya,
-  //   },
-  // ];
-  // for (const data of admin) {
-  //   const existingAdmin = await prisma.user.findUnique({
-  //     where: { email: data.email },
-  //   });
-  //   if (!existingAdmin) {
-  //     await prisma.user.create({
-  //       data: {
-  //         email: data.email,
-  //         name: data.name,
-  //         password: data.password,
-  //         isAdmin: data.isAdmin,
-  //         gender: data.gender,
-  //         job: data.job,
-  //       },
-  //     });
-  //   }
-  // }
 
   // seed work
   await prisma.work.createMany({
@@ -92,98 +65,154 @@ const main = async () => {
         name: 'Industri Pengolahan',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Melakukan Pemasangan Komponen Papan Utama, Sub-papan, dan Penutup Atas',
+          'Memasang Modul Pemindai Sidik Jari',
+          'Memasang Konektor Antena',
+        ],
       },
       {
         code: 'P04',
         name: 'Penyediaan Akomodasi dan Penyediaan Makan Minum',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Memproses Pemesanan',
+          'Memberikan Layanan Resepsionis Akomodasi',
+          'Menyimpan Catatan Keuangan',
+        ],
       },
       {
         code: 'P05',
         name: 'Konstruksi',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Melaksanakan Kebijakan Keselamatan dan Kesehatan Kerja dan Lingkungan (K3L) di Tempat Kerja',
+          'Berkomunikasi di Lingkungan Kerja',
+          'Melakukan Persiapan, Pembuatan Fondasi, Struktur, dan Arsitektur',
+        ],
       },
       {
         code: 'P06',
         name: 'Jasa Pendidikan',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Merumuskan Standar Keterampilan',
+          'Mengidentifikasi Kebutuhan Pelatihan Secara Makro dan Mikro',
+          'Menentukan Kebutuhan Pelatihan Individu',
+        ],
       },
       {
         code: 'P07',
         name: 'Transportasi dan Pergudangan',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Melakukan Pemeliharaan Kebersihan',
+          'Menerapkan Prosedur Keselamatan Kerja di Tempat Kerja',
+          'Mencatat Data Barang',
+        ],
       },
       {
         code: 'P08',
         name: 'Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Menyusun Rencana Kerja Individu dan Operasional',
+          'Membuat Program Keamanan',
+          'Menyusun Rancangan Kebijakan dan Strategi Keamanan',
+        ],
       },
       {
         code: 'P09',
         name: 'Jasa Kesehatan dan Kegiatan Sosial',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Melaksanakan Program Pemeriksaan Kesehatan Tenaga Kerja',
+          'Melaksanakan Program Promosi Kesehatan bagi Pekerja',
+          'Melaksanakan Program Keselamatan Kerja',
+        ],
       },
       {
         code: 'P10',
         name: 'Jasa Perusahaan',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Menganalisis Lingkungan Pengadaan Jasa',
+          'Mengembangkan Organisasi Pengadaan Jasa',
+          'Menyusun Kebutuhan dan Anggaran untuk Pengadaan Jasa',
+        ],
       },
       {
         code: 'P11',
         name: 'Pertambangan dan Penggalian',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Melakukan Tinjauan Rencana Tambang Terbuka Jangka Panjang',
+          'Melakukan Tinjauan Geologi, Hidrologi, Hidrogeologi, Geokimia, dan Geoteknik Tambang',
+          'Membuat Rencana Tambang Jangka Pendek',
+        ],
       },
       {
         code: 'P12',
         name: 'Jasa Keuangan dan Asuransi',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Mengembangkan Produk Asuransi dan Reasuransi',
+          'Memasarkan Produk Asuransi dan Reasuransi',
+          'Mengelola Portofolio Tertanggung/Peserta',
+        ],
       },
       {
         code: 'P13',
         name: 'Informasi dan Komunikasi',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Melaksanakan Pekerjaan dalam Tim',
+          'Merancang Algoritma Pemrograman',
+          'Menggunakan Spesifikasi Program',
+        ],
       },
       {
         code: 'P14',
         name: 'Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Memonitor Kualitas Air Permukaan dan Tanah',
+          'Mengolah Air Permukaan, Air Payau, atau Air Laut',
+          'Merencanakan Pengawasan Kualitas Air',
+        ],
       },
       {
         code: 'P15',
         name: 'Real Estat',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Memberikan Saran Legal dan Non-legal dalam Transaksi Properti',
+          'Melakukan Negosiasi dengan Pemilik Properti untuk Mendapatkan Daftar Properti',
+          'Mengadakan Pertemuan Bisnis dengan Pemilik/Penjual',
+        ],
       },
       {
         code: 'P16',
         name: 'Artistik/kesenian',
         suggestion:
           'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
-        competence: [''],
+        competence: [
+          'Mengimplementasikan Desain Panggung',
+          'Menentukan Spesifikasi, Bahan, dan Komponen Properti Pertunjukan',
+          'Merancang dan Melaksanakan Aspek Teknis Pertunjukan',
+        ],
       },
     ],
   });
@@ -356,9 +385,7 @@ const main = async () => {
     B06,
     B07,
     B08,
-  ] = await prisma.talentInterest.findMany({
-    orderBy: { code: 'asc' },
-  });
+  ] = await prisma.talentInterest.findMany({});
 
   const [
     P01,
@@ -377,9 +404,7 @@ const main = async () => {
     P14,
     P15,
     P16,
-  ] = await prisma.work.findMany({
-    orderBy: { code: 'asc' },
-  });
+  ] = await prisma.work.findMany({});
 
   await prisma.rule.createMany({
     data: [
