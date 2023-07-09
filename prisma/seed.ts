@@ -38,7 +38,7 @@ const main = async () => {
         code: 'P01',
         name: 'Pertanian, Kehutanan dan Perikanan',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Pertanian, Kehutanan, dan Perikanan diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang pekerjaan  Pertanian, Kehutanan, dan Perikanan, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti kemampuan beradaptasi untuk kemajuan proses pertanian dan keinginan pasar atau distributor yang terus berubah dan berkembang, kemampuan manajemen waktu dan organisasi, literasi teknologi untuk mengetahui perkembangan teknologi yang dapat diterapkan dalam bidang pekerjaan ini, teamwork untuk dapat mencapai tujuan bersama, mampu memecahkan masalah, fleksibilitas, dan memiliki sifat kepemimpinan. Dalam bidang pekerjaan ini, pengguna dapat memilih prospek pekerjaan seperti Spesialis Operasi Pertanian, Marketing Agricultural, Konsultan Pertanian, Ahli Bioteknologi, System Analysis, Surveyor Tanah, Quality Assurance dan Quality Control, Ahli peternakan dan Pengembangan Hewan, Compliance Officer, Ahli Genetika, Teknisi Konservasi Lingkungan, Konsultan Perikanan, Peneliti, Pengembang Komoditi, Jurnalistik Agriculture, dan lain sebagainya. Tentu diperlukan pengembangan pengalaman yang sesuai bagi pengguna untuk mendapatkan pekerjaan yang sesuai pula dengan bidang pekerjaan Pertanian, Kehutanan, dan Perikanan.',
         competence: [
           'Menerapkan Keselamatan dan Kesehatan Kerja (K3)',
           'Mengorganisasikan Pekerjaan',
@@ -51,7 +51,7 @@ const main = async () => {
         code: 'P02',
         name: 'Perdagangan Besar Dan Eceran',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang Perdagangan Besar Dan Eceran diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang pekerjaan Perdagangan Besar Dan Eceran, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti sikap ramah dengan pelanggan, keinginan untuk belajar, keterampilan dalam manajemen waktu yang baik, kemampuan untuk melakukan banyak tugas, kemauan untuk beradaptasi dalam pengelolaan perdagangan, ketahanan dalam menangani semua jenis pelanggan, kemudahan dalam persuasi dan keterampilan dalam bercerita. Selain hal itu, adapula beberapa hardskill yang diperlukan seperti pengetahuan produk yang mendalam, mendengarkan secara aktif, keterampilan komunikasi yang kuat, layanan pelanggan dan keterampilan penjualan ritel, keterampilan, dan pengalaman teknologi perdagangan. Tentu diperlukan rasa ingin tahu yang mendalam terhadap pengembangan pengelolaan perdagangan dalam skala besar maupun eceran agar tetap dapat bersaing dengan kompetitor.',
         competence: [
           'Melakukan Riset Pasar Ekspor',
           'Melaksanakan Promosi Ekspor',
@@ -64,7 +64,7 @@ const main = async () => {
         code: 'P03',
         name: 'Industri Pengolahan',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan industri pengolahan diberikan dengan mempertimbangkan minat dan bakat pengguna. Dalam meraih bidang pekerjaan industri pengolahan, pengguna perlu memperhatikan softskill maupun hardskill seperti etika dan kepatuhan, kemampuan menyelesaikan masalah, kemampuan berpikir kritis, cepat dan tanggap, dan lain sebaginya. Pengguna dalam meraih bidang ini perlu mengembangkan potensi diri sendiri dan memiliki keinginan untuk dapat mempelajari hal baru demi penunjang karir di bidang ini.',
         competence: [
           'Melakukan Pemasangan Komponen Papan Utama, Sub-papan, dan Penutup Atas',
           'Memasang Modul Pemindai Sidik Jari',
@@ -75,7 +75,7 @@ const main = async () => {
         code: 'P04',
         name: 'Penyediaan Akomodasi dan Penyediaan Makan Minum',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Penyediaan Akomodasi dan Penyediaan Makan Minum diberikan dengan mempertimbangkan minat dan bakat pengguna. Dalam meraih bidang pekerjaan ini, pengguna perlu memiliki softskill maupun hardskill seperti kemampuan komunikasi, kemampuan analisa pasar, kemampuan berhitung, manajemen waktu, kemampuan persuasi, dan lain sebagainya. Dalam hal ini, pengguna perlu mengembangkan diri untuk dapat meraih bidang pekerjaan ini dan mampu bersaing secara kompeten dengan bidang serupa.',
         competence: [
           'Memproses Pemesanan',
           'Memberikan Layanan Resepsionis Akomodasi',
@@ -86,7 +86,7 @@ const main = async () => {
         code: 'P05',
         name: 'Konstruksi',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Konstruksi diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang pekerjaan Konstruksi, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti Fisik dan mental yang kuat, Sanggup menghadapi tekanan, Kemampuan berhitung yang kuat, Keterampilan komputer yang baik, Mampu menggambar atau desain, dan Manajemen waktu yang teratur.    Prospek pekerjaan dalam bidang konstruksi juga sangat beragam seperti Insinyur situs pembangunan, Insinyur struktural atau air, Surveyor pengendalian bangunan, Konsultan konstruksi bangunan, kontraktor insinyur sipil, Pengacara hak paten, dan lain sebagainya. Tentu pengguna harus memiliki usaha untuk mengembangkan diri dalam mencapai pekerjaan dibidang konstruksi.',
         competence: [
           'Melaksanakan Kebijakan Keselamatan dan Kesehatan Kerja dan Lingkungan (K3L) di Tempat Kerja',
           'Berkomunikasi di Lingkungan Kerja',
@@ -97,7 +97,7 @@ const main = async () => {
         code: 'P06',
         name: 'Jasa Pendidikan',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Jasa Pendidikan diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang pekerjaan Jasa Pendidikan, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti keinginan belajar dan rasa ingin tahu yang tinggi, komunikasi yang baik, rasa percaya diri yang tinggi, kesabaran, kreativitas, dan dedikasi dalam dunia pendidikan.    Prospek pekerjaan dalam bidang jasa pendidikan juga sangat beragam seperti tenaga pengajar, koodinator pembelajaran, konselor edukasi, administrasi pendidikan, dan lain sebagainya. Tentu pengguna harus memiliki usaha untuk mengembangkan diri dalam mencapai pekerjaan dibidang jasa pendidikan.',
         competence: [
           'Merumuskan Standar Keterampilan',
           'Mengidentifikasi Kebutuhan Pelatihan Secara Makro dan Mikro',
@@ -108,7 +108,7 @@ const main = async () => {
         code: 'P07',
         name: 'Transportasi dan Pergudangan',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Transportasi dan Pergudangan diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Transportasi dan Pergudangan, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti perencanaan dan eksekusi, penyelesaian perselisihan, pengembangan proses kerja, pemodelan transportasi, penguasaan warehouse, fisik dan mental yang kuat, dan lain sebagainya. Tentu pengguna harus memiliki kemampuan-kemampuan yang diperlukan dalam mencapai pekerjaan dibidang Transportasi dan Pergudangan.',
         competence: [
           'Melakukan Pemeliharaan Kebersihan',
           'Menerapkan Prosedur Keselamatan Kerja di Tempat Kerja',
@@ -119,7 +119,7 @@ const main = async () => {
         code: 'P08',
         name: 'Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib dengan mempertimbangkan minat dan bakat pengguna. Bidang ini mencakup kegiatan yang sifatnya pemerintahan, yang umumnya dilakukan oleh administrasi dan mencakup perundang-undangan dan penerjemahan hukum yang berkaitan dengan pengadilan, seperti halnya administrasi program berdasarkan peraturan perundangan-undangan, kegiatan legislatif, perpajakan, pertahanan negara, keamanan dan keselatan negara, pelayanan imigrasi, hubungan luar negeri dan administrasi program pemerintah. Pengguna perlu memperhatikan aspek-aspek yang dibutuhkan apabila ingin memilih bidang pekerjaan ini',
         competence: [
           'Menyusun Rencana Kerja Individu dan Operasional',
           'Membuat Program Keamanan',
@@ -130,7 +130,7 @@ const main = async () => {
         code: 'P09',
         name: 'Jasa Kesehatan dan Kegiatan Sosial',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Jasa Kesehatan dan Kegiatan Sosial diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Jasa Kesehatan dan Kegiatan Sosial, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti memperhatikan etika profesi, kemampuan berpikir taktis dan organisasional,keterampilan berkomunikasi yang baik, integritas yang tinggi, dan lain sebagainya. Adapun beberapa prospek kerja dalam bidang ini seperti tenaga medis, psikologi klinis, keperawatan, kebidanan, kefarmasian, kesehatan masyarakat, kesehatan lingkungan, gizi, dokter dan lain sebagainya. Tentu pengguna harus memiliki kemampuan-kemampuan yang diperlukan dalam mencapai pekerjaan dibidang ini.',
         competence: [
           'Melaksanakan Program Pemeriksaan Kesehatan Tenaga Kerja',
           'Melaksanakan Program Promosi Kesehatan bagi Pekerja',
@@ -141,7 +141,7 @@ const main = async () => {
         code: 'P10',
         name: 'Jasa Perusahaan',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Jasa Perusahaan diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Jasa Perusahaan, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti kemampuan analisa yang baik, manajemen waktu dan organisasi, penyelesaian masalah, cekatan dan cepat, kemampuan negosiasi yang baik, dan lain sebagainya. Adapun beberapa prospek kerja dalam bidang ini seperti Penyedia service layanan. Tentu pengguna harus memiliki kemampuan-kemampuan yang diperlukan dalam mencapai pekerjaan dibidang Jasa Perusahaan.',
         competence: [
           'Menganalisis Lingkungan Pengadaan Jasa',
           'Mengembangkan Organisasi Pengadaan Jasa',
@@ -152,7 +152,7 @@ const main = async () => {
         code: 'P11',
         name: 'Pertambangan dan Penggalian',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Pertambangan dan Penggalian diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Pertambangan dan Penggalian, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti kemampuan observasi dan ketelitian yang tinggi, kerjasama tim yang baik, mampu memecahkan permasalahan, kemampuan analisa, berpikir kritis dan lain sebagainya. Adapun beberapa prospek kerja seperti Teknisi atau operator, insinyur pertambangan, ahli lingkungan, dan lain sebagainya. Tentu pengguna harus memiliki kemampuan-kemampuan yang diperlukan dalam mencapai pekerjaan dibidang Pertambangan dan Penggalian.',
         competence: [
           'Melakukan Tinjauan Rencana Tambang Terbuka Jangka Panjang',
           'Melakukan Tinjauan Geologi, Hidrologi, Hidrogeologi, Geokimia, dan Geoteknik Tambang',
@@ -163,7 +163,7 @@ const main = async () => {
         code: 'P12',
         name: 'Jasa Keuangan dan Asuransi',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Jasa Keuangan dan Asuransi diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Jasa Keuangan dan Asuransi, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti komunikasi yang baik, pemecahan masalah, layanan pelanggan yang baik, kecerdasan emosional, kemampuan berhitung yang baik, kerjasama tim, manajemen waktu yang baik, dan lain sebagainya. Adapun beberapa prospek kerja seperti spesialis di fintech, akuntan publik, perencana keuangan, konsultan keuangan, banker dan lain sebagainya. Tentu pengguna harus memiliki kemampuan-kemampuan yang diperlukan dalam mencapai pekerjaan dibidang Jasa keuangan dan Asuransi.',
         competence: [
           'Mengembangkan Produk Asuransi dan Reasuransi',
           'Memasarkan Produk Asuransi dan Reasuransi',
@@ -174,7 +174,7 @@ const main = async () => {
         code: 'P13',
         name: 'Informasi dan Komunikasi',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Informasi dan Komunikasi diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Informasi dan Komunikasi, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti komunikasi, bahasa pengkodean, kerjasama tim yang baik, jaringan komputer, analisis data, virtualisasi, kreativitas, penyelesaian masalah, berpikir kritis, dan lain sebagainya. Adapun beberapa prospek kerja seperti information security analyst, Machine Learning Engineer, Data Scientist, Web Developer, Software Development Engineer, Computer Hardware Engineer, Cloud Architect, dan lain sebagainya. Tentu pengguna harus memiliki kemampuan-kemampuan yang diperlukan dalam mencapai pekerjaan dibidang Informasi dan Komunikasi.',
         competence: [
           'Melaksanakan Pekerjaan dalam Tim',
           'Merancang Algoritma Pemrograman',
@@ -185,7 +185,7 @@ const main = async () => {
         code: 'P14',
         name: 'Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah, pengguna perlu memperhatikan aspek-aspek seperti kepedulian terhadap lingkungan, pengetahuan mendalam terkait pengelolaan limbah, keinginan untuk belajar hal baru, berpikir kritis, pemecahan permasalahan dan lain sebagainya. Tentu pengguna harus memerhatikan aspek-aspek yang dibutuhkan apabila ingin mendapatkan pekerjaan dibidang Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah.',
         competence: [
           'Memonitor Kualitas Air Permukaan dan Tanah',
           'Mengolah Air Permukaan, Air Payau, atau Air Laut',
@@ -196,7 +196,7 @@ const main = async () => {
         code: 'P15',
         name: 'Real Estat',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Real Estat diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Real Estat, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti kemampuan berkomunikasi, keterampilan memecahkan masalah, keterampilan teknologi, pengetahuan mengenai industri real estat,keterampilan negosiasi, etika dan integritas, pengetahuan hukum real estat, pemasaran dan lain sebagainya.Adapun cara meningkatkan keterampilan dalam bidang real estat bisa dilakukan dengan beberapa cara seperti mengikuti kursus pra-lisesnsi, sertifikasi, bergabung dengan organisasi profesional, membaca dan meneliti, menyelesaikan pendidikan berkelanjutan dan lain sebagainya.',
         competence: [
           'Memberikan Saran Legal dan Non-legal dalam Transaksi Properti',
           'Melakukan Negosiasi dengan Pemilik Properti untuk Mendapatkan Daftar Properti',
@@ -207,7 +207,7 @@ const main = async () => {
         code: 'P16',
         name: 'Artistik/kesenian',
         suggestion:
-          'Saran ini diberikan dengan mempertimbangkan minat, dan bakat yang dimiliki oleh pengguna, sifatnya tidak mutlak. Masih perlu dukungan oleh usaha, doa, kegigihan, serta pencarian informasi terkait dengan bidang yang ingin dituju. Dalam meraih bidang pekerjaan tersebut pengguna harus berusaha dengan maksimal seperti mengikuti pelatihan-pelatihan baik softskill maupun hardskill, memperbanyak informasi, memperluas koneksi, memperbanyak pengalaman dalam bidang yang dituju supaya bisa menjadi profesional.',
+          'Saran pada bidang pekerjaan Artistik/kesenian diberikan dengan mempertimbangkan minat dan bakat yang dimiliki pengguna. Dalam meraih bidang Artistik/kesenian, pengguna perlu memperhatikan soft-skill dan hard-skill yang dibutuhkan seperti kreativitas yang tinggi, berpikir secara kritis, penyelesaian masalah, detail dan terstruktur, berwawasan luas, tekun, dan lain sebagainya. Adapun beberapa prospek kerja seperti Kurator, Kritikus, konservator seni, seniman, graphic designer, entrepreneur, industri periklanan, dan lain sebagainya. Tentu pengguna harus memiliki kemampuan-kemampuan yang diperlukan dalam mencapai pekerjaan dibidang artistik/kesenian',
         competence: [
           'Mengimplementasikan Desain Panggung',
           'Menentukan Spesifikasi, Bahan, dan Komponen Properti Pertunjukan',
