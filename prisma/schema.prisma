@@ -2,63 +2,63 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+    provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
 }
 
 model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  name      String
-  password  String
-  gender    Gender
-  job       Job
-  isAdmin   Boolean  @default(false)
+    id        String   @id @default(uuid())
+    email     String   @unique
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    name      String
+    password  String
+    gender    Gender
+    job       Job
+    isAdmin   Boolean  @default(false)
 }
 
 model Work {
-  code       String   @id
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  name       String
-  suggestion String   @db.Text
-  competence String[]
-  rules      Rule[]
+    code       String   @id
+    createdAt  DateTime @default(now())
+    updatedAt  DateTime @updatedAt
+    name       String
+    suggestion String?  @db.Text
+    competence String[]
+    rules      Rule[]
 }
 
 model TalentInterest {
-  code        String   @id
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-  name        String
-  description String   @db.VarChar(255)
-  example     String[]
-  rules       Rule[]
+    code        String   @id
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @updatedAt
+    name        String
+    description String   @db.VarChar(255)
+    example     String[]
+    rules       Rule[]
 }
 
 model Rule {
-  id                 String         @id @default(uuid())
-  code               String
-  Work               Work           @relation(fields: [workCode], references: [code], onDelete: Cascade)
-  workCode           String
-  TalentInterest     TalentInterest @relation(fields: [talentInterestCode], references: [code], onDelete: Cascade)
-  talentInterestCode String
+    id                 String         @id @default(uuid())
+    code               String
+    Work               Work           @relation(fields: [workCode], references: [code], onDelete: Cascade)
+    workCode           String
+    TalentInterest     TalentInterest @relation(fields: [talentInterestCode], references: [code], onDelete: Cascade)
+    talentInterestCode String
 }
 
 enum Gender {
-  Pria
-  Wanita
+    Pria
+    Wanita
 }
 
 enum Job {
-  Pelajar
-  Mahasiswa
-  Jobseekers
-  Lainnya
+    Pelajar
+    Mahasiswa
+    Jobseekers
+    Lainnya
 }

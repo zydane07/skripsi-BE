@@ -13,7 +13,6 @@ import { Prisma } from '@prisma/client';
 export class WorksService {
   constructor(private prisma: PrismaService) {}
   async create(createWorkDto: CreateWorkDto) {
-    console.log('aaaaaaddd');
     console.log(createWorkDto);
 
     try {
@@ -30,6 +29,8 @@ export class WorksService {
 
       return works;
     } catch (error) {
+      console.log(error);
+
       if (!(error instanceof Prisma.PrismaClientKnownRequestError)) return;
       // console.log(error.code);
       if (error.code === 'P2002') throw new ConflictException();
